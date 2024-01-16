@@ -6,6 +6,10 @@ Now we're going to delve into debugging - a critical skill for every developer. 
 ## Why Debugging Matters
 Debugging is the process of identifying and fixing errors or bugs in your code. It's crucial for making sure your applications run smoothly and behave as expected. Up to now you've likely used `puts`, `pp`, or other logging techniques to help 'make the invisible visible' and resolve bugs in your code. The debug gem provides a way to inspect your code execution, examine variables, and control the flow to understand exactly what's happening at any point.
 
+<aside>
+  The origin of the term "debugging" is often attributed to Admiral Grace Hopper who found a literal bug while working on a Mark II computer at Harvard University in the 1940s. However, usage of the term traces back as far as 1878 in a letter written by Thomas Edison. [Source](https://www.computerworld.com/article/2515435/moth-in-the-machine--debugging-the-origins-of--bug-.html)
+</aside>
+
 ## Setting Up the debug Gem
 Before we start, ensure the debug gem is included in your Rails project:
 
