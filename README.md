@@ -1,3 +1,3 @@
 # Debugging
 
-TODO: add Learn URL
+https://learn.firstdraft.com/lessons/290-debugging
