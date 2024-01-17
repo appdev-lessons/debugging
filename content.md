@@ -122,7 +122,7 @@ Open your Rails application in a web browser and ensure the developer tools are 
 
 Interact with your application to trigger the JavaScript code. The execution will pause at the debugger statement.
 
-![](./assets/browser-js-breakpoint.png)
+![](assets/browser-js-breakpoint.png)
 
 ### Navigating the Browser's Debugging Tools
 When the execution is paused at a breakpoint:
