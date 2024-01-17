@@ -133,18 +133,6 @@ When the execution is paused at a breakpoint:
 - View the call stack to see the function call sequence that led to the breakpoint.
 - Evaluate expressions in the console.
 
-### A Practical Example
-Suppose you have a form in your Rails application, and you've written JavaScript to validate the form before submission. If users report issues with the form validation, you could insert a debugger statement in the validation function to diagnose the problem:
-
-```javascript
-function validateForm() {
-  debugger; // Pause here to inspect the form's data
-  // Validation logic...
-}
-```
-
-By triggering the form submission in your application with the developer tools open, the execution will pause at the debugger statement. This allows you to inspect the state of your form, variables, and step through your validation logic to identify any issues.
-
 ### Tips for Effective JavaScript Debugging
 - **Test in Multiple Browsers**: Different browsers have different developer tools and JavaScript engines. If you're encountering a browser-specific issue, make sure to debug in that particular browser.
 - **Utilize Console Logs**: Alongside breakpoints, judicious use of console.log() can provide valuable insights into the state of your application at various points.
