@@ -109,16 +109,13 @@ To create a breakpoint in JavaScript, you can use the `debugger` statement. When
 
 Here's an example of how to use it:
 
-Open your JavaScript file in the Rails app. For instance, `app/javascript/packs/application.js`.
+Open your JavaScript file in the Rails app. For instance, `app/javascript/application.js`.
 
 Add the debugger statement in the code where you want to pause execution. For example:
 
 ```javascript
-document.addEventListener("turbolinks:load", () => {
-  console.log("Page loaded!");
-  debugger; // Execution will pause here when dev tools are open
-  // ... rest of your JavaScript code ...
-});
+debugger; // Execution will pause here when dev tools are open
+// ... rest of your JavaScript code ...
 ```
 
 Open your Rails application in a web browser and ensure the developer tools are open. You can usually open them by right-clicking the page and selecting "Inspect" or pressing Ctrl+Shift+I (or CMD⌘+OPT⌥+I on Mac).
