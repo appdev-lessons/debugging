@@ -145,7 +145,61 @@ Now, let's put your new debugging skills into practice. Follow these steps in yo
 - Interact with your application to trigger the debugger.
 - Use the debug console to inspect variables, step through the code, and diagnose the issue.
 - Once you've identified the problem, make the necessary corrections in your code.
-  
+
+- Have you tried using `debugger` in one of your Rails projects or assignemnts to trigger a breakpint?
+- Yes
+  - Great! Remember to keep this tool handy when debugging your applications.
+- No
+  - Please try inserting a `debugger` breakpoint before continuing. 
+{: .choose_best #debugger_session title="Have you tried using debugger?" points="1" answer="1"}
+
+## Quiz
+
+- What is the primary purpose of debugging?
+- To write more code.
+  - Not correct. Debugging is focused on identifying and fixing errors in the code.
+- To improve code readability.
+  - Not correct. While debugging can indirectly improve readability, its main focus is on fixing errors.
+- To identify and fix errors or bugs in the code.
+  - Correct! Debugging helps ensure that applications run smoothly and behave as expected.
+{: .choose_best #purpose_of_debugging title="Purpose of Debugging" points="1" answer="3"}
+
+- Which command can be used to move to the next line of code without stepping into methods during a debugging session?
+- `step`
+  - Not correct. The step command moves to the next line, stepping into methods.
+- `next`
+  - Correct! The next command moves to the next line without stepping into methods.
+- `continue`
+- Not correct. The continue command resumes normal execution until the next breakpoint.
+{: .choose_best #next_command title="Next Command in Debugging" points="1" answer="2"}
+
+- What does the vars command do in a debugging session?
+- It displays local variables and their values.
+  - Correct! The vars command shows the current state of variables in scope.
+- It exits the debugging session.
+  - Not correct. The vars command displays local variables and their values.
+- It lists all available debugging commands.
+  - Not correct. The help command lists available debugging commands.
+{: .choose_best #vars_command title="Vars Command in Debugging" points="1" answer="1"}
+
+- The debug gem provides several aliases for initiating a debugging session, including binding.break, binding.b, and debugger.
+- True
+  - Correct! These aliases all provide the same functionality to start a debugging session.
+- False
+  - Not correct. These aliases are indeed provided by the debug gem.
+{: .choose_best #debug_aliases title="Debug Gem Aliases" points="1" answer="1"}
+
+- You can set breakpoints in JavaScript within a Rails application by using the debugger statement.
+- True
+  - Correct! The debugger statement pauses the execution of JavaScript code when the developer tools are open.
+- False
+  - Not correct. The debugger statement is used for setting breakpoints in JavaScript.
+{: .choose_best #javascript_debugger title="JavaScript Debugger Statement" points="1" answer="1"}
+
+<!-- Possible answers: Inspect code execution, examine variables, control code flow, identify and fix errors more effectively. -->
+- Name one benefit of using the debug gem for debugging in Ruby on Rails.
+{: .free_text #benefit_of_debug_gem title="Benefit of Using the Debug Gem" points="1"}
+
 ## Conclusion and Next Steps
 You've now learned the essentials of debugging in Ruby on Rails using the `debug` gem and the `debugger` alias. Remember, effective debugging is key to developing reliable and efficient applications.
 
