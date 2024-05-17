@@ -146,6 +146,8 @@ Now, let's put your new debugging skills into practice. Follow these steps in yo
 - Use the debug console to inspect variables, step through the code, and diagnose the issue.
 - Once you've identified the problem, make the necessary corrections in your code.
 
+---
+
 - Have you tried using `debugger` in one of your Rails projects or assignemnts to trigger a breakpint?
 - Yes
   - Great! Remember to keep this tool handy when debugging your applications.
