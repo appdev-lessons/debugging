@@ -1,7 +1,7 @@
 # Debugging in Ruby on Rails with the `debug` Gem
 
 ## Introduction to Debugging
-Now we're going to delve into debugging - a critical skill for every developer. We'll use the [debug](https://github.com/ruby/debug) gem, a robust tool for diagnosing and resolving issues in Ruby on Rails applications.
+Now we're going to delve into debugging - a critical skill for every developer. We'll use the [debug](https://github.com/ruby/debug) gem, a robust tool for diagnosing and resolving issues in Ruby applications.
 
 ## Why Debugging Matters
 Debugging is the process of identifying and fixing errors or bugs in your code. It's crucial for making sure your applications run smoothly and behave as expected. Up to now you've likely used `puts`, `pp`, or other logging techniques to help 'make the invisible visible' and resolve bugs in your code. The [debug](https://github.com/ruby/debug) gem provides a way to inspect your code execution, examine variables, and control the flow to understand exactly what's happening at any point.
@@ -11,7 +11,7 @@ Debugging is the process of identifying and fixing errors or bugs in your code. 
 </aside>
 
 ## Setting Up the debug Gem
-Before we start, ensure the debug gem is included in your Rails project:
+Before we start, ensure the debug gem is included in your project:
 
 Add the gem to your Gemfile:
 
@@ -70,7 +70,7 @@ Processing by PostsController#create as HTML
 ```
 
 ## Navigating the debugging Session
-When your Rails server hits the debugger line, it will pause, and you'll enter the debug mode in your console. Here's how to navigate:
+When your server hits the debugger line, it will pause, and you'll enter the debug mode in your console. Here's how to navigate:
 
 - `step` or `s`: Move to the next line of code, stepping into methods.
 - `next` or `n`: Move to the next line without stepping into methods.
@@ -84,7 +84,7 @@ When your Rails server hits the debugger line, it will pause, and you'll enter t
 - **Backtrace Inspection**: Use `backtrace` to view the call stack and understand how the code reached the current point.
 
 ## Debugging Views and Partials
-You can also debug views in Rails:
+You can also debug views:
 
 ```erb
 <%# app/views/users/new.html.erb %>
@@ -98,7 +98,7 @@ You can also debug views in Rails:
 
 When this view is rendered, the debugger will pause, allowing you to inspect the state of your view, including any instance variables like @user.
 
-## JavaScript Debugging in Rails
+## JavaScript Debugging
 It's also essential to know how to debug JavaScript, especially in modern web applications where client-side scripting plays a significant role. Here, we'll cover how to set breakpoints in JavaScript within a Rails application.
 
 ### Setting Up for JavaScript Debugging
@@ -109,7 +109,7 @@ To create a breakpoint in JavaScript, you can use the `debugger` statement. When
 
 Here's an example of how to use it:
 
-Open your JavaScript file in the Rails app. For instance, `app/javascript/application.js`.
+Open your JavaScript file. For instance, `app/javascript/application.js`.
 
 Add the debugger statement in the code where you want to pause execution. For example:
 
@@ -118,7 +118,7 @@ debugger; // Execution will pause here when dev tools are open
 // ... rest of your JavaScript code ...
 ```
 
-Open your Rails application in a web browser and ensure the developer tools are open. You can usually open them by right-clicking the page and selecting "Inspect" or pressing Ctrl+Shift+I (or CMD⌘+OPT⌥+I on Mac).
+Open your application in a web browser and ensure the developer tools are open. You can usually open them by right-clicking the page and selecting "Inspect" or pressing Ctrl+Shift+I (or CMD⌘+OPT⌥+I on Mac).
 
 Interact with your application to trigger the JavaScript code. The execution will pause at the debugger statement.
 
@@ -137,8 +137,8 @@ When the execution is paused at a breakpoint:
 - **Utilize Console Logs**: Alongside breakpoints, judicious use of console.log() can provide valuable insights into the state of your application at various points.
 - **Check for JavaScript Errors**: The browser's console will display JavaScript errors, which can be crucial clues in diagnosing problems.
 
-## Practice Exercise: Debugging a Rails Application
-Now, let's put your new debugging skills into practice. Follow these steps in your existing Rails project:
+## Practice Exercise: Debugging Your Application
+Now, let's put your new debugging skills into practice. Follow these steps in your existing Ruby project:
 
 - Identify a feature or a bug in your application where you suspect an issue.
 - Insert `debugger` at a strategic location in your code.
@@ -148,7 +148,7 @@ Now, let's put your new debugging skills into practice. Follow these steps in yo
 
 ---
 
-- Have you tried using `debugger` in one of your Rails projects or assignemnts to trigger a breakpint?
+- Have you tried using `debugger` in one of your projects or assignemnts to trigger a breakpint?
 - Yes
   - Great! Remember to keep this tool handy when debugging your applications.
 - No
@@ -199,11 +199,11 @@ Now, let's put your new debugging skills into practice. Follow these steps in yo
 {: .choose_best #javascript_debugger title="JavaScript Debugger Statement" points="1" answer="1"}
 
 <!-- Possible answers: Inspect code execution, examine variables, control code flow, identify and fix errors more effectively. -->
-- Name one benefit of using the debug gem for debugging in Ruby on Rails.
+- Name one benefit of using the debug gem for debugging in Ruby.
 {: .free_text #benefit_of_debug_gem title="Benefit of Using the Debug Gem" points="1"}
 
 ## Conclusion and Next Steps
-You've now learned the essentials of debugging in Ruby on Rails using the `debug` gem and the `debugger` alias. Remember, effective debugging is key to developing reliable and efficient applications.
+You've now learned the essentials of debugging in Ruby using the `debug` gem and the `debugger` alias. Remember, effective debugging is key to developing reliable and efficient applications.
 
 ## Further Learning
 - **Explore More Commands**: The debug gem offers a wide array of commands and capabilities. Spend time experimenting with them to understand their full potential.
@@ -212,6 +212,6 @@ You've now learned the essentials of debugging in Ruby on Rails using the `debug
 - Read the [Official Guide on debugging Rails applications](https://guides.rubyonrails.org/debugging_rails_applications.html)
 
 ## Final Exercise
-Try adding a new feature or fixing a complex bug in your application. Use the debugger to step through the entire flow of the feature or bug fix. This exercise will give you deeper insights into the interactions within your Rails application and enhance your problem-solving skills.
+Try adding a new feature or fixing a complex bug in your application. Use the debugger to step through the entire flow of the feature or bug fix. This exercise will give you deeper insights into the interactions within your application and enhance your problem-solving skills.
 
 Happy debugging! 🪰
