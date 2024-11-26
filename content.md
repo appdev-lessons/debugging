@@ -78,7 +78,10 @@ When your server hits the debugger line, it will pause, and you'll enter the deb
 - `vars`: Display local variables and their values.
 - `p <expression>`: Evaluate and print any Ruby expression.
   
-<aside>In debugging, the term "breakpoint" refers to the specific point in the code that causes the program to stop executing until it receives further input.</aside>
+<aside>
+
+In debugging, the term "breakpoint" refers to the specific point in the code that causes the program to stop executing until it receives further input.
+</aside>
 
 ## Advanced Debugging Techniques
 - **Conditional Breakpoints**: Set breakpoints that trigger under specific conditions, like `debugger if params[:debug]`.
